@@ -1,0 +1,26 @@
+/* write a program to print any number to print it is prime or not
+*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int a,b,c=0,d;
+   clrscr();
+   printf("Enter the value to check it is prime or not:");
+   scanf("%d",&a);
+   c=a/2;
+   for(b=2;b<=c;b++)
+   {
+      if(a%b==0)
+      {
+	printf("Number is not prime ");
+	d=1000;
+	break;
+      }
+   }
+   if(d==0)
+   {
+     printf("Number is prime");
+   }
+   getch();
+}

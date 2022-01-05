@@ -1,0 +1,29 @@
+/* write a program to enter any number to check itis armstrong or not
+*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,o,re,e,sum=0;
+    clrscr();
+    printf("Enter the value of a:");
+    scanf("%d",&a);
+    for(o=a;a!=0;)
+    {
+	re=a%10;
+	e=re*re*re;
+	a=a/10;
+	sum=sum+e;
+
+    }
+    if(o==sum)
+    {
+    printf("It is armstrong.");
+    }
+    else
+    {
+     printf("It is not armstrong.");
+    }
+    getch();
+
+}

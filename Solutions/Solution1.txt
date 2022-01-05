@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+		int a,o,re,sum=0;
+		clrscr();
+		printf("Enter the value of a:");
+		scanf("%d",&a);
+		for(o=a;a!=0;)
+		{
+			re=a%10;
+			//e=re*re*re;
+			a=a/10;
+			sum=sum+re;
+
+		}
+		printf("The sum of numbers:%d",sum);
+		getch();
+}
