@@ -11,7 +11,7 @@ void main()
    for(;a>0;)
    {
        r=a%10;
-       printf(" %d",r);
+       //printf(" %d",r);
        a=a/10;
 
    }
